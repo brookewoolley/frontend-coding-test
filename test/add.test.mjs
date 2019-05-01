@@ -1,4 +1,4 @@
-import { add } from '../solution';
+const add = require('../solution');
 
 test('add(a, b)', () => {
     expect(add(2, 2)).toBe(4);
