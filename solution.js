@@ -6,4 +6,13 @@ function add(...args) {
   return sum;
 }
 
-module.exports = add;
+function listToObject(array) {
+  let newObject = {};
+  for (var i = 0; i < array.length; i++) {
+    newObject[array[i].name] = array[i].value;
+  }
+  return newObject;
+}
+
+module.exports.add = add;
+module.exports.listToObject = listToObject;
