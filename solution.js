@@ -14,5 +14,11 @@ function listToObject(array) {
   return newObject;
 }
 
+function objectToList(obj) {
+  let result = Object.entries(obj).map(([name, value]) => ({ name, value }));
+  return result;
+}
+
 module.exports.add = add;
 module.exports.listToObject = listToObject;
+module.exports.objectToList = objectToList;
